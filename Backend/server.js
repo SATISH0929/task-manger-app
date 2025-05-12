@@ -11,6 +11,10 @@ const app = express();
 const errorHandler = require("./middlewares/errorHandler");
 app.use(errorHandler);
 
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use("/api/tasks", taskRoutes);   
