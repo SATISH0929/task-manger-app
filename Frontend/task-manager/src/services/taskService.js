@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API_URL = "http://localhost:5000/api/tasks"; 
+const API_URL = "https://task-manger-app-rho.vercel.app/"; 
 
 export const fetchTasks = () => axios.get(API_URL);
 export const createTask = (task) => axios.post(API_URL, task);
