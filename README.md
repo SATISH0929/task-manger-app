@@ -35,3 +35,6 @@
 | PUT    | `/api/tasks/:id`       | Update task           |
 | DELETE | `/api/tasks/:id`       | Delete task           |
 | GET    | `/api/tasks/search?q=` | Search tasks by title |
+
+# Output
+![Image](https://github.com/user-attachments/assets/09668bf2-58f2-4598-9e9d-8b36b2e36068)
