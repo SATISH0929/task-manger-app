@@ -22,7 +22,9 @@ app.use("/api/tasks", taskRoutes);
 const PORT = process.env.PORT || 5000;
 
 db.sequelize.sync().then(() => {
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  console.log("Database synced");
 });
+
+module.exports = app;
 
 console.log("DB Config:", process.env.DB_USER, process.env.DB_PASS, process.env.DB_NAME);
